@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./routes/Home.component";
+import Base from "./routes/base.component";
+import Contact from "./Components/Contact.component";
+import Signin from "./routes/Signin.component";
+import Navigation from "./Components/Navigation.component";
+import Checkout from "./Checkout/Checkout.component";
+import { Routes, Route } from "react-router-dom";
+import "./categories.styles.scss";
 
-function App() {
+const App = () => {
+  // const search = Home.querySelectorAll(".1");
+  // console.log(search);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<Navigation />}>
+        <Route index element={<Home />} />
+        <Route path="/shop" element={<Base />} />
+        <Route path="/auth" element={<Signin />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/checkout" element={<Checkout />} />
+      </Route>
+    </Routes>
   );
-}
+};
 
 export default App;

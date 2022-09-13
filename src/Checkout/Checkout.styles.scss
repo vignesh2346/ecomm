@@ -1,0 +1,50 @@
+// .checkout-page {
+//   overflow: scroll;
+// }
+
+.checkout-header {
+  font-size: 50px;
+}
+
+.checkout-container {
+  height: 300px;
+  align-items: center;
+  display: column;
+  margin-top: 40px;
+}
+
+.checkout-image {
+  height: 240px;
+  width: 200px;
+}
+
+.checkout-price {
+  margin-right: 1300px;
+  font-size: 22px;
+}
+
+.checkout-total {
+  align-content: center;
+  margin-top: 400px;
+  font-size: 40px;
+}
+
+.checkout-amount {
+  font-size: 40px;
+}
+
+.checkout-name {
+  padding-bottom: 40px;
+}
+
+.inc {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.dec {
+  &:hover {
+    cursor: pointer;
+  }
+}

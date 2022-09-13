@@ -1,0 +1,54 @@
+h1 {
+  font-size: large;
+  text-align: center;
+}
+
+img {
+  margin-top: 30px;
+  height: 80px;
+  width: 80px;
+  display: inline-flex;
+}
+
+p {
+  font-size: large;
+  text-align: center;
+  margin-top: 50px;
+}
+
+h2 {
+  font-size: small;
+  text-align: center;
+  display: flex;
+  padding-left: 18px;
+}
+
+h3 {
+  margin-top: 60px;
+  margin-right: 90px;
+  float: right;
+  font-size: medium;
+}
+
+h4 {
+  font-size: larger;
+  display: inline;
+  margin-top: 180px;
+  margin-left: 20px;
+}
+
+.closing {
+  float: left;
+  margin-top: 30px;
+  margin-right: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.amount {
+  float: right;
+  margin-right: 90px;
+  font-size: 20px;
+}
