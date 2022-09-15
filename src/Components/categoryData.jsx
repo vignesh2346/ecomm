@@ -18,8 +18,7 @@ const CategoryData = () => {
     {
       id: 4,
       title: "WOMENS",
-      imageUrl:
-        "https://scontent.fblr1-7.fna.fbcdn.net/v/t1.18169-9/21766587_1414435575338679_2076770450096491219_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=QYNvpoHrTL0AX_dM6B4&tn=aIQFW4m6iCxhJ5Fw&_nc_ht=scontent.fblr1-7.fna&oh=00_AT-rCg4ksb0vlkku8zsvrNXnxR5Bx_LD7d6QGAcCJ3YqCA&oe=6341BA1E",
+      imageUrl: "https://i.ibb.co/GCCdy8t/womens.png",
       // https://i.pinimg.com/280x280_RS/08/ab/84/08ab848a0d11cf9ae8c3413c21a819ed.jpg
       // https://i.ibb.co/GCCdy8t/womens.png"
       // https://scontent.fblr1-6.fna.fbcdn.net/v/t1.6435-9/39512283_1385108228259614_530341354824269824_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=kgvAdqybYOgAX876iX1&_nc_ht=scontent.fblr1-6.fna&oh=00_AT_jWHd2O3dwKAtxjmdPi6LrTNKqJFGXMPLWaK3AqHSWJw&oe=6341AD0F

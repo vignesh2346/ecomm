@@ -4,3 +4,15 @@
   column-gap: 30px;
   row-gap: 70px;
 }
+
+.title1 {
+  margin-bottom: 20px;
+  margin-top: 70px;
+  font-size: 40px;
+}
+
+span {
+  &:hover {
+    cursor: pointer;
+  }
+}
