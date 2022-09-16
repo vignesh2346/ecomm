@@ -6,7 +6,13 @@ import { signOutUser } from "../Utils/Firebase/Firebase";
 import CartIcon from "../cart-icon/cart-icon.component";
 import CartDropdown from "../cart-dropdown/cart-dropdown.component";
 import { IconContext } from "../context/icon-context";
-import "../Navigation.component.scss";
+// import "../Navigation.component.jsx";
+import {
+  Navigations,
+  NavLink,
+  NavLinks,
+  LogoContainer,
+} from "../Navigation.component";
 const Navigation = () => {
   const { currentUser } = useContext(Usercontext);
   const { click } = useContext(IconContext);
@@ -17,30 +23,26 @@ const Navigation = () => {
 
   return (
     <Fragment>
-      <div className="navigation">
-        <Link className="logo-container" to="/">
+      <Navigations>
+        <LogoContainer className="logo-container" to="/">
           <div>{<Logo />}</div>
-        </Link>
-        <div className="nav-links-container">
-          <Link className="nav-link" to="/shop">
-            SHOP
-          </Link>{" "}
-          <Link className="nav-link" to="/contact">
-            CONTACT
-          </Link>{" "}
+        </LogoContainer>
+        <NavLinks>
+          <NavLink to="/shop">SHOP</NavLink>{" "}
+          <NavLink to="/contact">CONTACT</NavLink>{" "}
           {currentUser ? (
-            <span className="nav-link" onClick={signOutHandler}>
+            <NavLink as="span" onClick={signOutHandler}>
               SIGN OUT
-            </span>
+            </NavLink>
           ) : (
-            <Link className="nav-link" to="/auth">
+            <NavLink className="nav-link" to="/auth">
               SIGN IN
-            </Link>
+            </NavLink>
           )}
           <CartIcon />
           {click && <CartDropdown />}
-        </div>
-      </div>
+        </NavLinks>
+      </Navigations>
       <Outlet />
     </Fragment>
   );
